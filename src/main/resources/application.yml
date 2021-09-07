@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: kafka
+server:
+  port: 9091
+
+logging:
+  file:
+    name: logs/log
+#日志配置文件路径
+#  config: classpath:logback.xml
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
